@@ -11,12 +11,10 @@ extinct_animals = {
 def is_extinct(extinct_animals, animal)
   
   if extinct_animals.has_key?(animal)
-    "The #{animal} extinct :("
+    "The #{animal} is extinct :("
   else
     "The #{animal} is not extinct!"
   end
-
-  #extinct_animals.select {|key, value| key == animal }
 
 end
 
@@ -25,4 +23,3 @@ puts is_extinct(extinct_animals, :'Andean Cat')
 puts is_extinct(extinct_animals, :'Dodo')
 puts is_extinct(extinct_animals, :'Tasmanian Tiger')
 puts is_extinct(extinct_animals, :'Saiga Antelope')
-

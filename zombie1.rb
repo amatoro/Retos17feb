@@ -4,3 +4,7 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars", "
 zombie_apocalypse_supplies.each do |element|
   puts element
 end
+
+
+## Solución Sebas
+zombie_apocalypse_supplies.each {|supply| puts supply}

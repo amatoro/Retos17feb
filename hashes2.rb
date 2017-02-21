@@ -10,3 +10,11 @@ extinct_animals = {
 
 
 puts extinct_animals.delete_if {|key, value| value >= 1999 }
+
+
+## Solución sebas
+extinct_animals.each do |animal, year|
+  extinct_animals.delete(animal) if year > 1999  
+end
+
+print extinct_animals

@@ -10,3 +10,11 @@ extinct_animals = {
 
 
 extinct_animals.each { |key, value| print "#{key} - #{value + 3} * " }
+
+
+## Solución Sebas
+extinct_animals.each do |animal, year|
+  extinct_animals[animal] += 3
+end
+
+print extinct_animals

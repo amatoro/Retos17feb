@@ -8,19 +8,27 @@ extinct_animals = {
   "Laysan Crake": 1923
 }
 
-def delete_animal(extinct_animals, animal)
-  extinct_animals.reject {|key| [key].include? animal }
-end
+# def delete_animal(extinct_animals, animal)
+#   extinct_animals.reject {|key| [key].include? animal }
+# end
 
-def new_ary(extinct_animals, animal)
-  extinct_animals.detect {|key, val| key == animal}
-end
+# def new_ary(extinct_animals, animal)
+#   extinct_animals.detect {|key, val| key == animal}
+# end
 
 
-print delete_animal(extinct_animals, :"Passenger Pigeon")
-print "\n"
-print new_ary(extinct_animals, :"Passenger Pigeon")
-print "\n"
+# print delete_animal(extinct_animals, :"Passenger Pigeon")
+# print "\n"
+# print new_ary(extinct_animals, :"Passenger Pigeon")
+# print "\n"
 
 #Acabamos de encontrar que el Passenger Pigeon, realmente no esta extincto! Remuevelo del hash extinct_animals y devuelve su pareja de key/value 
 #como un arreglo de dos elementos. Puedes encontrar un metodo en la documentación de la clase Hash que te puede ayudar con esto.
+
+
+##Solución Sebas
+
+p extinct_animals.assoc("Passenger Pigeon")
+
+extinct_animals.delete("Passenger Pigeon")
+p extinct_animals

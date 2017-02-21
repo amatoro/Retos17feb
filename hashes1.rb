@@ -1,3 +1,5 @@
+breakline = "\n"
+
 extinct_animals = {
   "Tasmanian Tiger": 1936,
   "Eastern Hare Wallaby": 1890,
